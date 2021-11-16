@@ -41,16 +41,16 @@ public class Cards {
                 default: throw new IllegalArgumentException("Something went wrong " + card.getFaceValue() + "is not a valid faceValue!");
             }
 
-            String suitName;
-            switch (card.getSuit()){
-                case 0: suitName = "clubs"; break;
-                case 1: suitName = "diamonds"; break;
-                case 2: suitName = "hearts"; break;
-                case 3: suitName = "spades"; break;
-                default: throw new IllegalArgumentException("Something went wrong " + card.getSuit() + "is not a valid suitName!");
-            }
+//            String suitName;
+//            switch (card.getSuit()){
+//                case 0: suitName = "clubs"; break;
+//                case 1: suitName = "diamonds"; break;
+//                case 2: suitName = "hearts"; break;
+//                case 3: suitName = "spades"; break;
+//                default: throw new IllegalArgumentException("Something went wrong " + card.getSuit() + "is not a valid suitName!");
+//            }
 
-            result[cardNumber] = faceValueName + " of " + suitName;
+            result[cardNumber] = faceValueName + " of " + card.getSuit().getName();
             cardNumber++;
         }
 

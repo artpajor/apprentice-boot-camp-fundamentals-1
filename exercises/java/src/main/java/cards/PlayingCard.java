@@ -1,11 +1,21 @@
 package cards;
 
 public class PlayingCard {
-    private int suit;
+    private Suit suit;
     private int faceValue;
 
+
     public PlayingCard(int suit, int faceValue) {
-        this.suit = suit;
+        if (suit == 0) {
+            this.suit = new Suit("clubs");
+        } else if (suit == 1) {
+            this.suit = new Suit("diamonds");
+        } else if (suit == 2) {
+            this.suit = new Suit("hearts");
+        } else {
+            this.suit = new Suit("spades");
+        }
+
         this.faceValue = faceValue;
     }
 
@@ -13,7 +23,8 @@ public class PlayingCard {
         return this.faceValue;
     }
 
-    public int getSuit() {
+    public Suit getSuit() {
         return this.suit;
     }
+
 }
