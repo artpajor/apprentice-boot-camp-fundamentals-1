@@ -2,7 +2,8 @@ package cards;
 
 
 public interface Deck {
-     cards.Card[] getCards();
+     String[] getCards();
      Card deal();
 
+    void shuffle();
 }
