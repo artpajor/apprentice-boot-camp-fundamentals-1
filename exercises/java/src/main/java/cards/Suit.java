@@ -1,13 +1,10 @@
 package cards;
 
-public class Suit {
-    private String name;
+enum Suit {
+    CLUBS, DIAMONDS, HEARTS, SPADES;
 
-    public Suit(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
+    @Override
+    public String toString() {
+        return name().toLowerCase();
     }
 }

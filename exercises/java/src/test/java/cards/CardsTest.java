@@ -7,7 +7,7 @@ public class CardsTest {
 
     @Test
     public void getDeckInOrder_return52CardsCorrectlyFormatted() {
-        Cards cards = new Cards();
+        PlayingCardDeck cards = new PlayingCardDeck();
         assertThat(cards.getCards()).containsExactly(
                 "ace of clubs",
                 "2 of clubs",
