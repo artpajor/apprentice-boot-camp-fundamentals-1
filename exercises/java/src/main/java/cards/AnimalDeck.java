@@ -31,6 +31,10 @@ class AnimalDeck extends Deck {
     }
 
     public AnimalCard deal() {
-        return cards.remove(0);
+        try {
+            return cards.remove(0);
+        } catch (IndexOutOfBoundsException e) {
+            return null;
+        }
     }
 }
