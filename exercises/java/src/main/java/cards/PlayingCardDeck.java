@@ -1,9 +1,19 @@
 package cards;
-
+import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Collections;
 
 public class PlayingCardDeck extends Deck {
+
+//    private List<PlayingCard> playingCards;
+//
+//    PlayingCardDeck() {
+//        playingCards = new ArrayList<>();
+//        for (Suit suit : Suit.values()) {
+//            playingCards.add(new PlayingCard(suit));
+//        }
+//    }
 
     private PlayingCard[] cards = new PlayingCard[52];
 
