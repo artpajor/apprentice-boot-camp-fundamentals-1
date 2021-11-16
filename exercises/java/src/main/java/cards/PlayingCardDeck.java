@@ -3,7 +3,7 @@ package cards;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class PlayingCardDeck implements Deck {
+public class PlayingCardDeck extends Deck {
 
     private PlayingCard[] cards = new PlayingCard[52];
 
