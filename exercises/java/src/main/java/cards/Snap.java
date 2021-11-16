@@ -13,7 +13,7 @@ class Snap {
     }
 
     public static void main(String[] args) {
-        Snap snap = new Snap(new AnimalDeck());
+        Snap snap = new Snap(new PlayingCardDeck());
         snap.play();
     }
 
@@ -54,4 +54,3 @@ class Snap {
         System.out.println("Scores: " + player1Score + " vs " + player2Score);
     }
 }
-
