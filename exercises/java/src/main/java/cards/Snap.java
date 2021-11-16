@@ -54,3 +54,4 @@ class Snap {
         System.out.println("Scores: " + player1Score + " vs " + player2Score);
     }
 }
+
